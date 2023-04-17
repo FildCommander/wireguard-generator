@@ -4,16 +4,26 @@ For that, it's using the [wgtypes go packet](golang.zx2c4.com/wireguard/wgctrl/w
 
 # Build
 For this program, you need to run the following commands:
-`go get golang.zx2c4.com/wireguard/wgctrl/wgtypes@latest`
-`go get fyne.io/fyne/v2@latest`
-`go install fyne.io/fyne/v2/cmd/fyne@latest`
-`go install github.com/fyne-io/fyne-cross@latest`
-
+~~~
+go get golang.zx2c4.com/wireguard/wgctrl/wgtypes@latest
+go get fyne.io/fyne/v2@latest
+go install fyne.io/fyne/v2/cmd/fyne@latest
+go install github.com/fyne-io/fyne-cross@latest
+~~~
 
 To build, I use fyne-cross. With it, you can build an Executable for Windows, macOS and Linux on a single system.  For it to work, you must also install docker.
-Windows: `fyne-cross windows -app-id wggen-ui`
-macOS: `fyne-cross darwin -app-id wggen-ui`
-Linux: `fyne-cross linux -app-id wggen-ui`
+## Windows: 
+~~~
+fyne-cross windows -app-id wggen-ui
+~~~
+## macOS: 
+~~~
+fyne-cross darwin -app-id wggen-ui
+~~~
+## Linux: 
+~~~
+fyne-cross linux -app-id wggen-ui
+~~~
 
 
 # Legal
